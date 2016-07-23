@@ -1,5 +1,5 @@
 var dogDir = "dogs";
-var basePictureUrl = 'https://raw.githubusercontent.com/alin-rautoiu/corgr/master/';
+var basePictureUrl = 'https://raw.githubusercontent.com/alin-rautoiu/corgr/master';
 var dogs = [
     {
         "face" : "resized-0.jpg",

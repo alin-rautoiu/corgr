@@ -1,5 +1,5 @@
 var dogDir = "dogs";
-
+var basePictureUrl = 'https://raw.githubusercontent.com/alin-rautoiu/corgr/master/';
 var dogs = [
     {
         "face" : "resized-0.jpg",
@@ -69,7 +69,7 @@ app.get('/getCorgi/:id', function(req, res) {
     }
 
     var dog = {
-        "pathToFace": __dirname + path.sep + dogDir + path.sep + dogs[id].face, 
+        "pathToFace": basePictureUrl + path.sep + dogDir + path.sep + dogs[id].face, 
         "name" : dogs[id].name, 
         "likes": dogs[id].likes
     };
@@ -86,7 +86,7 @@ app.get('/getAllCorgis/', function(req, res) {
     dogs.forEach(function(element) {
        allDogs.push(
            {
-               "pathToFace": __dirname + path.sep + dogDir + path.sep + element.face, 
+               "pathToFace": basePictureUrl + path.sep + dogDir + path.sep + element.face, 
                "name" : element.name, 
                "likes" : element.likes
             }); 

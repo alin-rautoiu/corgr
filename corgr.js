@@ -111,7 +111,5 @@ app.get('/getCorgiFace/:id', function(req, res) {
      res.end(img, 'binary');
 });
 
-var server = app.listen(8080, function () {
-    console.log("Listening");
-});
+var server = app.listen(process.env.PORT || 3002);
 
